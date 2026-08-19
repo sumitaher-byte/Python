@@ -1,0 +1,54 @@
+str = "x"
+"hello"+"world" = "helloworld"
+ 
+length of str = len(str)
+
+Letter at 3plaace in str = str[3]
+
+lettes 0th to 4th place = str[0 : 5]
+
+whole word = [ : ] {py understand blank}
+
+##STR. FUNCTION##
+
+upper()	Converts to uppercase "hello".upper() → "HELLO"
+
+lower()	Converts to lowercase	"HELLO".lower() → "hello"
+
+title()	Capitalizes each word "python notes".title() → "Python Notes"
+
+strip()	Removes whitespace	" hi ".strip() → "hi"
+
+replace(a,b)	Replaces substring	"apple".replace("a","A") → "Apple"
+
+split()	Splits into list	"a,b,c".split(",") → ['a','b','c']
+
+join()	Joins list into string	",".join(['a','b']) → "a,b"
+startswith()	Checks prefix
+
+	"python".startswith("py") → True
+
+endswith()	Checks suffix	"notes.txt".endswith(".txt") → True
+
+find()	Finds index of substring	"banana".find("na") → 2
+
+count()	Counts occurrences	"banana".count("a") → 3
+
+
+## CONDITIONAL STATEMENT##
+
+Checks evrytime
+if(condition):
+    (result)
+
+check ony when if statement is false
+elif(condition):
+    (result)
+
+runs every time(write at last)
+else:
+    (result)
+
+
+
+
