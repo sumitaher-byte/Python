@@ -9,9 +9,9 @@ acess specific no (marks[3])
 
 to change values in list student[3]=raju
 
-slising listname [sl sssss; el]
+slicing listname [2:4]
 
-list.appemd(x) #adds x to the end  
+list.append(x) #adds x to the end  
 
 list.sort() #sorts in asending order 
 
