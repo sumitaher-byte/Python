@@ -2,7 +2,8 @@
 
 dic = {}
 
-math = (input("Entre Your Math Marks:-"))
+dic.update({"math" : (input("Entre Your Math Marks:-"))})
+dic.update({"physics" : (input("Entre your physics marks:-"))})
+dic.update({"chemistry":(input("Entre your chemistry marks:-"))})
 
-dic.update({"math" : math,})
 print(dic)

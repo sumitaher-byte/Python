@@ -34,6 +34,25 @@ print(pair[0]) #prints 0th pair in the dic
 
 print(dic.get(key)) #gives values for that specific key
 
-dic.update({"city" : "nashik"}) #add this jey and values to the dic
+dic.update({"city" : "nashik"}) #add this key and values to the dic
 
 dic.update({"name" : "sam"}) #dic gona update and change name sumit to sam
+
+##SETS##
+#items in the set should be unique if add 2 same no they gona covert to single no, also set is unorder.
+
+set.add(x) #add x to the set.
+
+set.remove(x) #removes x from the set.
+
+set.clear() #clears the set.
+
+set.pop() #removes random item in the set
+
+set.union(set2) #combine both set without ignoring dublicate
+
+set.intersection(set2) # gives only common items in both sets
+
+
+
+
