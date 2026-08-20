@@ -1,0 +1,39 @@
+## DICTIONARY AND SETS ##
+
+dic = {
+      "key" : "value",
+      "name" : "sumit",
+      12.99 : 98
+      "marks" : {
+             "math" : 98
+             "physics" : 95
+                 }
+
+print(dic) = #will print dicnory with info inside it
+
+print(dic["name"]) #will print values of that key
+
+dic["age"] = 18 #add age key and 18 value in dic
+
+print([dic][marks]) #print marks dic in dic dictionary
+
+print(dic.keys()) #print keys in dic
+
+print(list(dic.keys())) # prinr and converst keys in dic into list
+
+print(dic.values()) # print all values 
+
+print(list(dic.values())) #print and convert all values into list
+
+print(dic.items()) #print all keys and values
+
+
+print(list(dic.items())) #convert all keys and values into list and print all
+
+print(pair[0]) #prints 0th pair in the dic
+
+print(dic.get(key)) #gives values for that specific key
+
+dic.update({"city" : "nashik"}) #add this jey and values to the dic
+
+dic.update({"name" : "sam"}) #dic gona update and change name sumit to sam
