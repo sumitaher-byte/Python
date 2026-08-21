@@ -216,3 +216,38 @@ for character in str:
 
 
 else: #write else in the index line of for loop and program inside else only run if loop ends totally not break.
+
+
+range(x, y, z):	#x is start, y is stop, z is step size
+
+for el in range(5): 
+	print(el)   #gona print from 0 to 4
+
+ 
+for el in range(1, 5):
+	print(el)	#print from 1 to 4
+
+
+for el in range(2, 10, 2):
+	print(el)	#gona print (2, 4, 6, 8)
+
+
+
+pass
+
+for i in range(5):  
+	pass	##if not want to do any work in loop write 		pass it gona show no error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
