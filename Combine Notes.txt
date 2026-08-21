@@ -1,0 +1,218 @@
+Lecture 1
+
+Print something	print("Hello")
+Store a value	x = 10
+Take input	x = input()
+Take number input	x = int(input())
+Add	a + b
+Subtract	a - b
+Multiply	a * b
+Divide	a / b
+Integer division	a // b
+Remainder	a % b
+Square	x ** 2
+Cube	x ** 3
+Power	x ** n
+true    a == b
+true    a != b
+true    a >= b
+true    a <= b
+true    a >  b
+true    a <  b
+
+Absolute value	abs(x)
+Round number	round(x)
+Maximum	max(a, b)
+Minimum	min(a, b)
+Convert to integer	int(x)
+Convert to decimal	float(x)
+Convert to text	str(x)
+Check data type	type(x)
+
+
+
+Lecture 2 
+
+
+str = "x"
+"hello"+"world" = "helloworld"
+ 
+length of str = len(str)
+
+Letter at 3plaace in str = str[3]
+
+lettes 0th to 4th place = str[0 : 5]
+
+whole word = [ : ] {py understand blank}
+
+##STR. FUNCTION##
+
+upper()	Converts to uppercase "hello".upper() → "HELLO"
+
+lower()	Converts to lowercase	"HELLO".lower() → "hello"
+
+title()	Capitalizes each word "python notes".title() → "Python Notes"
+
+strip()	Removes whitespace	" hi ".strip() → "hi"
+
+replace(a,b)	Replaces substring	"apple".replace("a","A") → "Apple"
+
+split()	Splits into list	"a,b,c".split(",") → ['a','b','c']
+
+join()	Joins list into string	",".join(['a','b']) → "a,b"
+startswith()	Checks prefix
+
+	"python".startswith("py") → True
+
+endswith()	Checks suffix	"notes.txt".endswith(".txt") → True
+
+find()	Finds index of substring	"banana".find("na") → 2
+
+count()	Counts occurrences	"banana".count("a") → 3
+
+
+## CONDITIONAL STATEMENT##
+
+Checks evrytime
+if(condition):
+    (result)
+
+check ony when if statement is false
+elif(condition):
+    (result)
+
+runs every time(write at last)
+else:
+    (result)
+
+
+
+Lecture 3
+
+
+##Lists##
+
+marks = [x, x, x, x, x, x]  List
+
+type(marks)
+
+acess specific no (marks[3])
+
+
+to change values in list student[3]=raju
+
+slicing listname [2:4]
+
+list.append(x) #adds x to the end  
+
+list.sort() #sorts in asending order 
+
+list.sort( reverse=True) #sorts in decending order
+
+list.reverse() #reverse the list
+
+list.insert(idx, x) #insert x at idx place
+
+list.remove(X) #removes first x in the list
+
+list.pop(idx) # removes element at idx
+
+
+##tuples##
+
+marks = (x ,x ,x ,x ,x ,x) #cant change tuple
+
+print(tup[3])
+
+print(marks[1 : 3]) #print section in tupple
+
+print(marks.index(x)) #prints first appering place of x
+
+print(marks.count(x)) #prints how many times the x is repeated in tuple
+
+
+
+Lecture 4
+
+## DICTIONARY AND SETS ##
+
+dic = {
+      "key" : "value",
+      "name" : "sumit",
+      12.99 : 98
+      "marks" : {
+             "math" : 98
+             "physics" : 95
+                 }
+
+print(dic) = #will print dicnory with info inside it
+
+print(dic["name"]) #will print values of that key
+
+dic["age"] = 18 #add age key and 18 value in dic
+
+print([dic][marks]) #print marks dic in dic dictionary
+
+print(dic.keys()) #print keys in dic
+
+print(list(dic.keys())) # prinr and converst keys in dic into list
+
+print(dic.values()) # print all values 
+
+print(list(dic.values())) #print and convert all values into list
+
+print(dic.items()) #print all keys and values
+
+
+print(list(dic.items())) #convert all keys and values into list and print all
+
+print(pair[0]) #prints 0th pair in the dic
+
+print(dic.get(key)) #gives values for that specific key
+
+dic.update({"city" : "nashik"}) #add this key and values to the dic
+
+dic.update({"name" : "sam"}) #dic gona update and change name sumit to sam
+
+##SETS##
+#items in the set should be unique if add 2 same no they gona covert to single no, also set is unorder.
+
+set.add(x) #add x to the set.
+
+set.remove(x) #removes x from the set.
+
+set.clear() #clears the set.
+
+set.pop() #removes random item in the set
+
+set.union(set2) #combine both set without ignoring dublicate
+
+set.intersection(set2) # gives only common items in both sets
+
+
+
+Lecture 5
+
+#Loops#
+
+while loops
+
+while Condition :
+    other program 
+
+
+break #break ends the loop where you want
+
+continue #continue ignore the program in loop after continue and goes back from start
+
+
+for loops
+
+for el in list:
+    print(el)   #list goes in el and can print
+
+for character in str:
+    print(character)  #prints each character indivisualy from str
+
+
+else: #write else in the index line of for loop and program inside else only run if loop ends totally not break.
