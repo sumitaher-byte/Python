@@ -240,6 +240,31 @@ for i in range(5):
 
 
 
+Lecture 5
+
+
+
+Function #block of statements that perform a specific task
+
+def fun_name(parameter1, parameter2):    #takes input
+	(code)
+	return(value) #return output
+
+
+fun_name(a, b):        #calling function
+
+a = fun_name(a, b):     #store value in a
+
+
+
+
+
+
+
+
+
+
+
 
 
 
