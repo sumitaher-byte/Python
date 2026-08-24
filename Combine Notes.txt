@@ -270,6 +270,61 @@ show(5)   #print 5 4 3 2 1
 
 
 
+Lecture 7
+
+Files I/O  #python can perform oprations on files(read & write data)
+
+Text Files : .txt .docx .log etc
+Binary Files : .mp4 .mov .png .jpeg etc
+
+f = open("file_name","mode") #mode = r : read, w : write
+
+data = f.read(5)  #5 is no of char want to take 
+
+f.close()  #close file after use
+
+line1 = f.readline()     #gona read first line
+line2 = f.readline()     #gona read second line
+
+
+#rewriting data in file
+f = open("demo.txt","w")
+f.write("this is new line")  #erase all data in the file and 				add this data
+
+#adding data to the file
+f = open("demo.txt","a")
+f.write("this is new line")  #adds this line to he file
+
+if we open file in a or w mode py auto matically creates new file
+
+
+fileopen modes
+
+r #open for reading
+w #open for writing, truncating the file first
+x #create a new file and open it for writing 
+b #binary mode
+t #text mode(default)
++ #open a desk file for updating(reading and writing)
+r+ #read and overwrite pointer at start
+w+ #read and overite truncate
+a+ #read and append pointer at end no truncate
+
+
+with 
+
+with open("demo.txt","a") as f:
+data + f.read()			different method for opening 				file (auto close file)
+
+using the os module
+
+import os
+os.remove(filename)
+
+for installing module 
+pip/pip3 install module_name
+
+
 
 
 
