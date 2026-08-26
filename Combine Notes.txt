@@ -327,7 +327,60 @@ pip/pip3 install module_name
 
 
 
+Lecture 8
 
+OOP in python (object oriented programming)
+
+To map with real world scenarios, we started using objects in code. This is called object oriented programing.
+
+
+class #class are blueprint for object.
+	#class name starts with capital letter
+
+
+#creating class
+class Student:
+	def __init__(self, attributes):  #self is same as s1 				or new obj,additional data = 				attribute
+		print(x)     #it gona print x on each obj
+	name: "sumit aher"   #saves name as sumit aher for 				all students
+	
+
+#creating object
+s1 = Student(attributes)
+print(s1.name)
+
+#__init__ fun run at evry object intitalization
+
+class atri = Same for each obj
+obj.atri = different for each obj
+
+
+ex. 
+class Student:
+	college_name = "ISBM Pune"  #same for all obj
+
+	def __init__(self, name, marks): #diffr for each 					student
+		self.name = name
+		self.marks = marks   #self is stuent s1,s2
+
+s1 = Student("sumit", 97)  #save data for this student
+print(s1.name, s1.marks)   #print data
+
+##static methods for functions in class(without using self)
+
+
+@staticmethod  #convert normal method to static
+def hellow():
+	print("Hello")
+
+
+#abstraction
+hiding the implantation details of class and only showing the essential features to the users.
+
+#encapsulation
+wrapping data and function into single unit(object)
+
+#
 
 
 
