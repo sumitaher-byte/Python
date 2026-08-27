@@ -380,17 +380,42 @@ hiding the implantation details of class and only showing the essential features
 #encapsulation
 wrapping data and function into single unit(object)
 
-#
 
 
+Lecture 9 (Part 2 of OOPS)
 
 
+del  #use to delete object or its properties
 
 
+del s1 #delete the object
+
+del s1.name #delete properties of object
+
+self.__pass = pass  # __ to make that property private and cant acces 				outside class
 
 
+#inheritance 
 
 
+class Car:
+	def start
+
+class Toyota(car)  #this can run fun in car because we inherit car in Toyota
+
+super()  #for caaling in parent class fun and constants
+
+self.__class__.name  #gona save name inn both class and 			object
+
+@classmethod #save name in fun both in class and object
+
+
+@property     #for using it to change output when input 		change
+def percentage(self):
+	return ---- 
+
+
+polimorphism    #when same operatior have diffr meanings according to contex
 
 
 
