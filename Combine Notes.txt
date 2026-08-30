@@ -1,421 +1,1693 @@
-Lecture 1
+# PYTHON NOTES
 
-Print something	print("Hello")
-Store a value	x = 10
-Take input	x = input()
-Take number input	x = int(input())
-Add	a + b
-Subtract	a - b
-Multiply	a * b
-Divide	a / b
-Integer division	a // b
-Remainder	a % b
-Square	x ** 2
-Cube	x ** 3
-Power	x ** n
-true    a == b
-true    a != b
-true    a >= b
-true    a <= b
-true    a >  b
-true    a <  b
+========================================
+LECTURE 1 — PYTHON BASICS
+=========================
 
-Absolute value	abs(x)
-Round number	round(x)
-Maximum	max(a, b)
-Minimum	min(a, b)
-Convert to integer	int(x)
-Convert to decimal	float(x)
-Convert to text	str(x)
-Check data type	type(x)
+## COMMENTS
 
+Comments are notes written inside code.
+Python ignores comments while running the program.
 
+# This is a comment
 
-Lecture 2 
+Comments are useful for explaining code.
 
+========================================
+PRINT
+=====
 
-str = "x"
-"hello"+"world" = "helloworld"
- 
-length of str = len(str)
+Print something:
 
-Letter at 3plaace in str = str[3]
+print("Hello")
 
-lettes 0th to 4th place = str[0 : 5]
+========================================
+VARIABLES
+=========
 
-whole word = [ : ] {py understand blank}
+A variable stores a value.
 
-##STR. FUNCTION##
+x = 10
 
-upper()	Converts to uppercase "hello".upper() → "HELLO"
+Example:
 
-lower()	Converts to lowercase	"HELLO".lower() → "hello"
+name = "Sumit"
+age = 18
 
-title()	Capitalizes each word "python notes".title() → "Python Notes"
+========================================
+BASIC DATA TYPES
+================
 
-strip()	Removes whitespace	" hi ".strip() → "hi"
+int
+Used for whole numbers.
 
-replace(a,b)	Replaces substring	"apple".replace("a","A") → "Apple"
+x = 10
 
-split()	Splits into list	"a,b,c".split(",") → ['a','b','c']
+float
+Used for decimal numbers.
 
-join()	Joins list into string	",".join(['a','b']) → "a,b"
-startswith()	Checks prefix
+x = 10.5
 
-	"python".startswith("py") → True
+str
+Used for text.
 
-endswith()	Checks suffix	"notes.txt".endswith(".txt") → True
+name = "Sumit"
 
-find()	Finds index of substring	"banana".find("na") → 2
+bool
+Used for True or False.
 
-count()	Counts occurrences	"banana".count("a") → 3
+is_student = True
 
+Check data type:
 
-## CONDITIONAL STATEMENT##
+type(x)
 
-Checks evrytime
-if(condition):
-    (result)
+========================================
+INPUT
+=====
 
-check ony when if statement is false
-elif(condition):
-    (result)
+Take input:
 
-runs every time(write at last)
+x = input()
+
+Important:
+input() always returns a string.
+
+Example:
+
+age = input()
+
+Even if the user enters 18, age is stored as "18" (string).
+
+Take integer input:
+
+x = int(input())
+
+Take decimal input:
+
+x = float(input())
+
+========================================
+TYPE CONVERSION
+===============
+
+Convert to integer:
+
+int(x)
+
+Convert to decimal:
+
+float(x)
+
+Convert to text:
+
+str(x)
+
+Convert to boolean:
+
+bool(x)
+
+Check data type:
+
+type(x)
+
+========================================
+ARITHMETIC OPERATORS
+====================
+
+Addition:
+
+a + b
+
+Subtraction:
+
+a - b
+
+Multiplication:
+
+a * b
+
+Division:
+
+a / b
+
+Integer/Floor division:
+
+a // b
+
+Remainder/Modulus:
+
+a % b
+
+Square:
+
+x ** 2
+
+Cube:
+
+x ** 3
+
+Power:
+
+x ** n
+
+========================================
+COMPARISON OPERATORS
+====================
+
+Comparison operators return True or False.
+
+Equal to:
+
+a == b
+
+Not equal to:
+
+a != b
+
+Greater than:
+
+a > b
+
+Less than:
+
+a < b
+
+Greater than or equal to:
+
+a >= b
+
+Less than or equal to:
+
+a <= b
+
+Example:
+
+10 > 5
+
+Output:
+
+True
+
+========================================
+BOOLEAN VALUES
+==============
+
+Python has two Boolean values:
+
+True
+False
+
+Example:
+
+a = 10
+b = 20
+
+print(a > b)
+
+Output:
+
+False
+
+========================================
+LOGICAL OPERATORS
+=================
+
+and
+Returns True when both conditions are True.
+
+Example:
+
+age >= 18 and age <= 60
+
+or
+Returns True when at least one condition is True.
+
+Example:
+
+day == "Saturday" or day == "Sunday"
+
+not
+Reverses True/False.
+
+Example:
+
+not True
+
+Output:
+
+False
+
+========================================
+BUILT-IN FUNCTIONS
+==================
+
+Absolute value:
+
+abs(x)
+
+Round number:
+
+round(x)
+
+Maximum:
+
+max(a, b)
+
+Minimum:
+
+min(a, b)
+
+Convert to integer:
+
+int(x)
+
+Convert to decimal:
+
+float(x)
+
+Convert to text:
+
+str(x)
+
+Check data type:
+
+type(x)
+
+========================================
+LECTURE 2 — STRINGS & CONDITIONAL STATEMENTS
+============================================
+
+# STRINGS
+
+A string is a sequence of characters.
+
+Example:
+
+name = "Sumit"
+
+========================================
+STRING CONCATENATION
+====================
+
+Joining strings using +:
+
+"hello" + "world"
+
+Output:
+
+"helloworld"
+
+Example:
+
+first = "Sumit"
+last = "Aher"
+
+name = first + " " + last
+
+========================================
+STRING LENGTH
+=============
+
+len() returns the number of characters in a string.
+
+Example:
+
+name = "Sumit"
+
+print(len(name))
+
+Output:
+
+5
+
+========================================
+STRING INDEXING
+===============
+
+Index starts from 0.
+
+Example:
+
+name = "Sumit"
+
+name[0] -> S
+name[1] -> u
+name[2] -> m
+name[3] -> i
+name[4] -> t
+
+========================================
+NEGATIVE INDEXING
+=================
+
+Negative indexing starts from the end.
+
+Example:
+
+name = "Sumit"
+
+name[-1] -> t
+name[-2] -> i
+name[-3] -> m
+
+========================================
+STRING SLICING
+==============
+
+Syntax:
+
+string[start : stop]
+
+The stop index is NOT included.
+
+Example:
+
+name = "Sumit"
+
+name[0:4]
+
+Output:
+
+"Sumi"
+
+Whole string:
+
+name[:]
+
+From beginning to index 3:
+
+name[:4]
+
+From index 2 to end:
+
+name[2:]
+
+Using step:
+
+name[start : stop : step]
+
+========================================
+STRING METHODS
+==============
+
+upper()
+Converts string to uppercase.
+
+"hello".upper()
+
+Output:
+
+"HELLO"
+
+lower()
+Converts string to lowercase.
+
+"HELLO".lower()
+
+Output:
+
+"hello"
+
+title()
+Capitalizes the first letter of each word.
+
+"python notes".title()
+
+Output:
+
+"Python Notes"
+
+strip()
+Removes whitespace from the beginning and end.
+
+" hi ".strip()
+
+Output:
+
+"hi"
+
+replace(a, b)
+Replaces one substring with another.
+
+"apple".replace("a", "A")
+
+Output:
+
+"Apple"
+
+split()
+Splits a string into a list.
+
+"a,b,c".split(",")
+
+Output:
+
+['a', 'b', 'c']
+
+join()
+Joins elements of a list into one string.
+
+",".join(['a', 'b'])
+
+Output:
+
+"a,b"
+
+startswith()
+Checks whether a string starts with a specific value.
+
+"python".startswith("py")
+
+Output:
+
+True
+
+endswith()
+Checks whether a string ends with a specific value.
+
+"notes.txt".endswith(".txt")
+
+Output:
+
+True
+
+find()
+Returns the index of the first occurrence of a substring.
+
+"banana".find("na")
+
+Output:
+
+2
+
+If the value is not found:
+
+"banana".find("xyz")
+
+Output:
+
+-1
+
+count()
+Counts how many times a value occurs.
+
+"banana".count("a")
+
+Output:
+
+3
+
+========================================
+CONDITIONAL STATEMENTS
+======================
+
+Conditional statements are used to make decisions in a program.
+
+## if
+
+Runs the code if the condition is True.
+
+if condition:
+code
+
+Example:
+
+age = 18
+
+if age >= 18:
+print("Adult")
+
+## elif
+
+Checks another condition if the previous condition was False.
+
+if condition:
+code
+elif condition:
+code
+
+## else
+
+Runs when all previous conditions are False.
+
+if condition:
+code
+elif condition:
+code
 else:
-    (result)
+code
 
+Example:
 
+age = 15
 
-Lecture 3
+if age >= 18:
+print("Adult")
+else:
+print("Not Adult")
 
+========================================
+LECTURE 3 — LISTS & TUPLES
+==========================
 
-##Lists##
+# LISTS
 
-marks = [x, x, x, x, x, x]  List
+A list stores multiple values in one variable.
+
+Example:
+
+marks = [90, 85, 95, 88, 76]
+
+Lists are:
+
+* Ordered
+* Mutable (can be changed)
+* Allow duplicate values
+* Can contain different data types
+
+========================================
+CHECK TYPE
+==========
 
 type(marks)
 
-acess specific no (marks[3])
+========================================
+ACCESS LIST ELEMENT
+===================
 
+Index starts from 0.
 
-to change values in list student[3]=raju
+marks[3]
 
-slicing listname [2:4]
+========================================
+NEGATIVE INDEXING IN LIST
+=========================
 
-list.append(x) #adds x to the end  
+Example:
 
-list.sort() #sorts in asending order 
+marks[-1]
 
-list.sort( reverse=True) #sorts in decending order
+Returns the last element.
 
-list.reverse() #reverse the list
+marks[-2]
 
-list.insert(idx, x) #insert x at idx place
+Returns the second-last element.
 
-list.remove(X) #removes first x in the list
+========================================
+CHANGE LIST VALUE
+=================
 
-list.pop(idx) # removes element at idx
+Lists are mutable, so values can be changed.
 
+student = ["sumit", "raj", "aman"]
 
-##tuples##
+student[1] = "raju"
 
-marks = (x ,x ,x ,x ,x ,x) #cant change tuple
+Now:
 
-print(tup[3])
+["sumit", "raju", "aman"]
 
-print(marks[1 : 3]) #print section in tupple
+========================================
+LIST SLICING
+============
 
-print(marks.index(x)) #prints first appering place of x
+Syntax:
 
-print(marks.count(x)) #prints how many times the x is repeated in tuple
+list[start : stop]
 
+Example:
 
+marks[2:4]
 
-Lecture 4
+Gets elements at index 2 and 3.
 
-## DICTIONARY AND SETS ##
+From beginning:
+
+marks[:3]
+
+From index 2 to end:
+
+marks[2:]
+
+Whole list:
+
+marks[:]
+
+Using step:
+
+marks[::2]
+
+========================================
+LIST METHODS
+============
+
+append(x)
+
+Adds x to the end of the list.
+
+list.append(x)
+
+sort()
+
+Sorts the list in ascending order.
+
+list.sort()
+
+sort(reverse=True)
+
+Sorts the list in descending order.
+
+list.sort(reverse=True)
+
+reverse()
+
+Reverses the order of the list.
+
+list.reverse()
+
+insert(index, x)
+
+Inserts x at a specific index.
+
+list.insert(index, x)
+
+remove(x)
+
+Removes the first occurrence of x.
+
+list.remove(x)
+
+pop(index)
+
+Removes and returns the element at the given index.
+
+list.pop(index)
+
+pop()
+
+If index is not given, removes and returns the last element.
+
+list.pop()
+
+========================================
+REMOVE vs POP
+=============
+
+remove(x)
+
+Removes an element by VALUE.
+
+Example:
+
+numbers = [10, 20, 30]
+
+numbers.remove(20)
+
+Result:
+
+[10, 30]
+
+pop(index)
+
+Removes an element by INDEX.
+
+Example:
+
+numbers = [10, 20, 30]
+
+numbers.pop(1)
+
+Result:
+
+[10, 30]
+
+========================================
+TUPLES
+======
+
+A tuple is similar to a list, but it cannot be changed after creation.
+
+Example:
+
+marks = (90, 85, 95, 88, 76)
+
+Tuples are:
+
+* Ordered
+* Immutable (cannot be changed)
+* Allow duplicate values
+
+========================================
+ACCESS TUPLE ELEMENT
+====================
+
+marks[3]
+
+========================================
+NEGATIVE INDEXING
+=================
+
+marks[-1]
+
+Returns the last element.
+
+========================================
+TUPLE SLICING
+=============
+
+marks[1:3]
+
+========================================
+TUPLE METHODS
+=============
+
+index(x)
+
+Returns the index of the first occurrence of x.
+
+marks.index(x)
+
+count(x)
+
+Counts how many times x occurs.
+
+marks.count(x)
+
+========================================
+LIST vs TUPLE
+=============
+
+List:
+
+marks = [90, 80, 70]
+
+Can be changed.
+
+Tuple:
+
+marks = (90, 80, 70)
+
+Cannot be changed.
+
+========================================
+LECTURE 4 — DICTIONARY & SETS
+=============================
+
+# DICTIONARY
+
+A dictionary stores data in KEY : VALUE pairs.
+
+Example:
 
 dic = {
-      "key" : "value",
-      "name" : "sumit",
-      12.99 : 98
-      "marks" : {
-             "math" : 98
-             "physics" : 95
-                 }
+"name": "Sumit",
+"age": 18,
+"marks": {
+"math": 98,
+"physics": 95
+}
+}
 
-print(dic) = #will print dicnory with info inside it
+========================================
+PRINT DICTIONARY
+================
 
-print(dic["name"]) #will print values of that key
+print(dic)
 
-dic["age"] = 18 #add age key and 18 value in dic
+========================================
+ACCESS VALUE USING KEY
+======================
 
-print([dic][marks]) #print marks dic in dic dictionary
+print(dic["name"])
 
-print(dic.keys()) #print keys in dic
+Output:
 
-print(list(dic.keys())) # prinr and converst keys in dic into list
+Sumit
 
-print(dic.values()) # print all values 
+========================================
+ACCESS NESTED DICTIONARY
+========================
 
-print(list(dic.values())) #print and convert all values into list
+print(dic["marks"])
 
-print(dic.items()) #print all keys and values
+Prints the marks dictionary.
 
+To access a specific value:
 
-print(list(dic.items())) #convert all keys and values into list and print all
+print(dic["marks"]["math"])
 
-print(pair[0]) #prints 0th pair in the dic
+Output:
 
-print(dic.get(key)) #gives values for that specific key
+98
 
-dic.update({"city" : "nashik"}) #add this key and values to the dic
+========================================
+ADD NEW KEY-VALUE PAIR
+======================
 
-dic.update({"name" : "sam"}) #dic gona update and change name sumit to sam
+dic["city"] = "Nashik"
 
-##SETS##
-#items in the set should be unique if add 2 same no they gona covert to single no, also set is unorder.
+========================================
+CHANGE VALUE
+============
 
-set.add(x) #add x to the set.
+dic["name"] = "Sam"
 
-set.remove(x) #removes x from the set.
+========================================
+DICTIONARY METHODS
+==================
 
-set.clear() #clears the set.
+keys()
 
-set.pop() #removes random item in the set
+Returns all keys.
 
-set.union(set2) #combine both set without ignoring dublicate
+dic.keys()
 
-set.intersection(set2) # gives only common items in both sets
+Convert keys to list:
 
+list(dic.keys())
 
+values()
 
-Lecture 5
+Returns all values.
 
-#Loops#
+dic.values()
 
-while loops
+Convert values to list:
 
-while Condition :
-    other program 
+list(dic.values())
 
+items()
 
-break #break ends the loop where you want
+Returns all key-value pairs.
 
-continue #continue ignore the program in loop after continue and goes back from start
+dic.items()
 
+Convert items to list:
 
-for loops
+list(dic.items())
+
+get(key)
+
+Returns the value of a specific key.
+
+dic.get("name")
+
+update()
+
+Adds new key-value pairs or updates existing values.
+
+dic.update({"city": "Nashik"})
+
+dic.update({"name": "Sam"})
+
+========================================
+DICTIONARY PAIRS
+================
+
+Example:
+
+for pair in dic.items():
+print(pair)
+
+Access parts of a pair:
+
+pair[0] -> key
+pair[1] -> value
+
+========================================
+DELETE FROM DICTIONARY
+======================
+
+del
+
+Deletes a key-value pair.
+
+del dic["age"]
+
+========================================
+SETS
+====
+
+A set is a collection of unique values.
+
+Example:
+
+numbers = {1, 2, 3, 4, 5}
+
+Important properties:
+
+* Items are unique
+* Duplicate values are automatically removed
+* Sets are unordered
+* Sets do not support indexing
+
+Example:
+
+numbers = {1, 2, 2, 3, 3}
+
+Result:
+
+{1, 2, 3}
+
+========================================
+EMPTY SET
+=========
+
+Important:
+
+{} creates an empty dictionary, NOT an empty set.
+
+To create an empty set:
+
+set()
+
+========================================
+SET METHODS
+===========
+
+add(x)
+
+Adds x to the set.
+
+numbers.add(x)
+
+remove(x)
+
+Removes x from the set.
+
+numbers.remove(x)
+
+If x does not exist, remove() gives an error.
+
+discard(x)
+
+Removes x if it exists.
+
+numbers.discard(x)
+
+If x does not exist, discard() does not give an error.
+
+clear()
+
+Removes all elements from the set.
+
+numbers.clear()
+
+pop()
+
+Removes and returns an arbitrary element.
+
+numbers.pop()
+
+========================================
+SET OPERATIONS
+==============
+
+union()
+
+Combines elements from both sets.
+
+Duplicates are removed.
+
+set1.union(set2)
+
+Example:
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+set1.union(set2)
+
+Result:
+
+{1, 2, 3, 4, 5}
+
+intersection()
+
+Returns only common elements.
+
+set1.intersection(set2)
+
+Result:
+
+{3}
+
+========================================
+LECTURE 5 — LOOPS
+=================
+
+Loops are used to repeat a block of code.
+
+========================================
+WHILE LOOP
+==========
+
+A while loop keeps running as long as the condition is True.
+
+Syntax:
+
+while condition:
+code
+
+Example:
+
+i = 1
+
+while i <= 5:
+print(i)
+i += 1
+
+========================================
+BREAK
+=====
+
+break immediately stops the loop.
+
+Example:
+
+i = 1
+
+while i <= 10:
+if i == 5:
+break
+print(i)
+i += 1
+
+========================================
+CONTINUE
+========
+
+continue skips the remaining code of the current iteration and starts the next iteration.
+
+Example:
+
+for i in range(5):
+if i == 2:
+continue
+print(i)
+
+Output:
+
+0
+1
+3
+4
+
+========================================
+FOR LOOP
+========
+
+A for loop is used to iterate over a sequence such as:
+
+* List
+* String
+* Tuple
+* Range
+* etc.
+
+========================================
+LOOP THROUGH LIST
+=================
 
 for el in list:
-    print(el)   #list goes in el and can print
+print(el)
+
+Example:
+
+numbers = [10, 20, 30]
+
+for el in numbers:
+print(el)
+
+========================================
+LOOP THROUGH STRING
+===================
 
 for character in str:
-    print(character)  #prints each character indivisualy from str
+print(character)
 
+This prints each character individually.
 
-else: #write else in the index line of for loop and program inside else only run if loop ends totally not break.
+========================================
+FOR ELSE
+========
 
+The else block runs when the loop finishes normally.
 
-range(x, y, z):	#x is start, y is stop, z is step size
+If the loop is stopped using break, the else block does NOT run.
 
-for el in range(5): 
-	print(el)   #gona print from 0 to 4
+Example:
 
- 
-for el in range(1, 5):
-	print(el)	#print from 1 to 4
+for i in range(5):
+print(i)
+else:
+print("Loop completed")
 
+========================================
+RANGE
+=====
 
-for el in range(2, 10, 2):
-	print(el)	#gona print (2, 4, 6, 8)
+Syntax:
 
+range(start, stop, step)
 
+start
+Starting value.
 
+stop
+Ending limit.
+The stop value is NOT included.
+
+step
+Amount by which the value changes.
+
+========================================
+RANGE EXAMPLES
+==============
+
+range(5)
+
+Gives:
+
+0, 1, 2, 3, 4
+
+range(1, 5)
+
+Gives:
+
+1, 2, 3, 4
+
+range(2, 10, 2)
+
+Gives:
+
+2, 4, 6, 8
+
+========================================
+PASS
+====
+
+pass is used when you do not want to write any code yet.
+
+It prevents Python from giving an indentation error.
+
+Example:
+
+for i in range(5):
 pass
 
-for i in range(5):  
-	pass	##if not want to do any work in loop write 		pass it gona show no error
+========================================
+LECTURE 6 — FUNCTIONS & RECURSION
+=================================
 
+# FUNCTIONS
 
+A function is a block of code that performs a specific task.
 
-Lecture 5
+Functions help us:
 
+* Reuse code
+* Organize code
+* Avoid repeating code
 
+========================================
+CREATING A FUNCTION
+===================
 
-Function #block of statements that perform a specific task
+Syntax:
 
-def fun_name(parameter1, parameter2):    #takes input
-	(code)
-	return(value) #return output
+def function_name(parameter1, parameter2):
+code
+return value
 
+========================================
+CALLING A FUNCTION
+==================
 
-fun_name(a, b):        #calling function
+function_name(a, b)
 
-a = fun_name(a, b):     #store value in a
+========================================
+RETURN VALUE
+============
 
+A function can return a value using return.
 
-Recursion #fun call itself repetedly
+Example:
 
+def add(a, b):
+return a + b
+
+result = add(10, 20)
+
+print(result)
+
+Output:
+
+30
+
+========================================
+PARAMETERS
+==========
+
+Parameters are variables written inside the function definition.
+
+Example:
+
+def add(a, b):
+
+a and b are parameters.
+
+========================================
+ARGUMENTS
+=========
+
+Arguments are the actual values passed when calling the function.
+
+Example:
+
+add(10, 20)
+
+10 and 20 are arguments.
+
+========================================
+DEFAULT PARAMETERS
+==================
+
+A parameter can have a default value.
+
+Example:
+
+def greet(name="Sumit"):
+print("Hello", name)
+
+greet()
+
+Output:
+
+Hello Sumit
+
+greet("Raj")
+
+Output:
+
+Hello Raj
+
+========================================
+PRINT vs RETURN
+===============
+
+print()
+
+Displays something on the screen.
+
+return
+
+Sends a value back from the function.
+
+Example:
+
+def add(a, b):
+return a + b
+
+result = add(10, 20)
+
+The returned value can be stored and used later.
+
+========================================
+RECURSION
+=========
+
+Recursion means a function calls itself repeatedly until a stopping condition is reached.
+
+Example:
 
 def show(n):
-	if(n == 0):
-		return
-	print(n)
-	show(n-1)
-show(5)   #print 5 4 3 2 1
+if n == 0:
+return
 
+```
+print(n)
+show(n - 1)
+```
 
+show(5)
 
+Output:
 
+5
+4
+3
+2
+1
 
-Lecture 7
+========================================
+BASE CASE
+=========
 
-Files I/O  #python can perform oprations on files(read & write data)
+The condition that stops recursion is called the BASE CASE.
 
-Text Files : .txt .docx .log etc
-Binary Files : .mp4 .mov .png .jpeg etc
+In the above example:
 
-f = open("file_name","mode") #mode = r : read, w : write
+if n == 0:
+return
 
-data = f.read(5)  #5 is no of char want to take 
+is the base case.
 
-f.close()  #close file after use
+========================================
+NONE
+====
 
-line1 = f.readline()     #gona read first line
-line2 = f.readline()     #gona read second line
+None represents the absence of a value.
 
+Example:
 
-#rewriting data in file
-f = open("demo.txt","w")
-f.write("this is new line")  #erase all data in the file and 				add this data
+def test():
+return
 
-#adding data to the file
-f = open("demo.txt","a")
-f.write("this is new line")  #adds this line to he file
+result = test()
 
-if we open file in a or w mode py auto matically creates new file
+result is None.
 
+========================================
+LECTURE 7 — FILE I/O
+====================
 
-fileopen modes
+# FILE I/O
 
-r #open for reading
-w #open for writing, truncating the file first
-x #create a new file and open it for writing 
-b #binary mode
-t #text mode(default)
-+ #open a desk file for updating(reading and writing)
-r+ #read and overwrite pointer at start
-w+ #read and overite truncate
-a+ #read and append pointer at end no truncate
+I/O means Input/Output.
 
+Python can perform operations on files such as:
 
-with 
+* Reading data
+* Writing data
+* Appending data
 
-with open("demo.txt","a") as f:
-data + f.read()			different method for opening 				file (auto close file)
+========================================
+TYPES OF FILES
+==============
 
-using the os module
+Text files:
+
+.txt
+.log
+etc.
+
+Binary files:
+
+.mp4
+.mov
+.png
+.jpeg
+etc.
+
+========================================
+OPENING A FILE
+==============
+
+Syntax:
+
+f = open("file_name", "mode")
+
+Example:
+
+f = open("demo.txt", "r")
+
+========================================
+FILE MODES
+==========
+
+r
+
+Open for reading.
+
+w
+
+Open for writing.
+Erases/truncates existing content first.
+
+a
+
+Open for appending.
+Adds new data at the end.
+
+x
+
+Creates a new file.
+Gives an error if the file already exists.
+
+b
+
+Binary mode.
+
+t
+
+Text mode.
+Default mode.
+
+*
+
+Used for reading and writing.
+
+========================================
+READING FILE
+============
+
+data = f.read()
+
+Reads the entire file.
+
+Read a specific number of characters:
+
+data = f.read(5)
+
+Reads 5 characters.
+
+========================================
+READLINE
+========
+
+Reads one line at a time.
+
+line1 = f.readline()
+line2 = f.readline()
+
+========================================
+CLOSE FILE
+==========
+
+f.close()
+
+Closes the file.
+
+It is good practice to close a file after using it.
+
+========================================
+WRITING TO A FILE
+=================
+
+# w MODE
+
+w mode opens a file for writing.
+
+If the file already contains data, w mode removes the old data first.
+
+Example:
+
+f = open("demo.txt", "w")
+f.write("This is new line")
+f.close()
+
+========================================
+APPENDING TO A FILE
+===================
+
+# a MODE
+
+a mode adds new data to the end of the existing file.
+
+Example:
+
+f = open("demo.txt", "a")
+f.write("This is new line")
+f.close()
+
+If the file does not exist, Python creates a new file when using w or a mode.
+
+========================================
+r+ MODE
+=======
+
+Read and write.
+
+The file pointer starts at the beginning.
+
+Existing content is NOT automatically erased.
+
+========================================
+w+ MODE
+=======
+
+Read and write.
+
+Existing content is erased/truncated first.
+
+========================================
+a+ MODE
+=======
+
+Read and append.
+
+New data is written at the end.
+
+Existing content is not erased.
+
+========================================
+FILE POINTER
+============
+
+A file has a pointer that tells Python where it is currently reading/writing.
+
+tell()
+
+Returns the current position of the file pointer.
+
+Example:
+
+f.tell()
+
+seek()
+
+Moves the file pointer to a specific position.
+
+Example:
+
+f.seek(0)
+
+Moves the pointer to the beginning.
+
+========================================
+WITH STATEMENT
+==============
+
+with open() is another way to work with files.
+
+The file is automatically closed after the with block finishes.
+
+Example:
+
+with open("demo.txt", "r") as f:
+data = f.read()
+
+print(data)
+
+No need to manually write:
+
+f.close()
+
+========================================
+OS MODULE
+=========
+
+The os module allows Python to interact with the operating system.
+
+Import:
 
 import os
-os.remove(filename)
 
-for installing module 
-pip/pip3 install module_name
+Delete a file:
 
+os.remove("filename")
 
+========================================
+INSTALLING MODULES
+==================
 
+pip install module_name
 
-Lecture 8
+or:
 
-OOP in python (object oriented programming)
+pip3 install module_name
 
-To map with real world scenarios, we started using objects in code. This is called object oriented programing.
+========================================
+IMPORTANT PYTHON REMINDERS
+==========================
 
+1. Python is case-sensitive.
 
-class #class are blueprint for object.
-	#class name starts with capital letter
+Name and name are different variables.
 
+2. Indexing starts from 0.
 
-#creating class
-class Student:
-	def __init__(self, attributes):  #self is same as s1 				or new obj,additional data = 				attribute
-		print(x)     #it gona print x on each obj
-	name: "sumit aher"   #saves name as sumit aher for 				all students
-	
+Example:
 
-#creating object
-s1 = Student(attributes)
-print(s1.name)
+"Python"[0]
 
-#__init__ fun run at evry object intitalization
+Output:
 
-class atri = Same for each obj
-obj.atri = different for each obj
+P
 
+3. Slicing stop value is NOT included.
 
-ex. 
-class Student:
-	college_name = "ISBM Pune"  #same for all obj
+"Python"[0:2]
 
-	def __init__(self, name, marks): #diffr for each 					student
-		self.name = name
-		self.marks = marks   #self is stuent s1,s2
+Output:
 
-s1 = Student("sumit", 97)  #save data for this student
-print(s1.name, s1.marks)   #print data
+"Py"
 
-##static methods for functions in class(without using self)
+4. input() returns a string.
 
+For numbers, use:
 
-@staticmethod  #convert normal method to static
-def hellow():
-	print("Hello")
+int(input())
 
+or:
 
-#abstraction
-hiding the implantation details of class and only showing the essential features to the users.
+float(input())
 
-#encapsulation
-wrapping data and function into single unit(object)
+5. Lists are mutable.
 
+Example:
 
+numbers[0] = 100
 
-Lecture 9 (Part 2 of OOPS)
+6. Tuples are immutable.
 
+Their values cannot be changed after creation.
 
-del  #use to delete object or its properties
+7. Sets contain unique values and are unordered.
 
+8. {} creates an empty dictionary.
 
-del s1 #delete the object
+Use set() for an empty set.
 
-del s1.name #delete properties of object
+9. Dictionary data is accessed using keys.
 
-self.__pass = pass  # __ to make that property private and cant acces 				outside class
+dic["name"]
 
+10. break stops a loop.
 
-#inheritance 
+continue skips the current iteration.
 
+11. pass does nothing.
 
-class Car:
-	def start
+It is used as a placeholder.
 
-class Toyota(car)  #this can run fun in car because we inherit car in Toyota
+12. A function is created using def.
 
-super()  #for caaling in parent class fun and constants
+13. return sends a value back from a function.
 
-self.__class__.name  #gona save name inn both class and 			object
+14. Recursion needs a base case to stop.
 
-@classmethod #save name in fun both in class and object
+15. with open() automatically closes the file.
 
 
-@property     #for using it to change output when input 		change
-def percentage(self):
-	return ---- 
 
 
-polimorphism    #when same operatior have diffr meanings according to contex
+
+
+
+
 
 
 
