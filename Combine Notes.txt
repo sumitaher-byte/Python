@@ -1684,6 +1684,16 @@ It is used as a placeholder.
 
 
 
+Class  #class is the blue print for creating objects
+
+Object #
+
+
+
+
+
+
+
 
 
 
